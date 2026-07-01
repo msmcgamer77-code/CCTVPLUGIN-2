@@ -1,0 +1,10 @@
+# CCTV Plugin config
+
+# Radius (in blocks) around each camera that gets recorded when recording is on
+record-radius: 20
+
+# How often (in ticks, 20 ticks = 1 second) a snapshot of nearby players is taken
+record-interval-ticks: 20
+
+# How many seconds a player stays in spectator "watch" mode max (0 = no limit)
+max-watch-seconds: 0
