@@ -1,0 +1,27 @@
+name: CCTVPlugin
+version: '1.0.0'
+main: com.cctv.CCTVPlugin
+api-version: '1.20'
+author: You
+description: Placeable CCTV cameras, a portable monitor to watch them live, and footage recording/playback.
+
+commands:
+  cctv:
+    description: CCTV plugin main command
+    usage: |
+      /cctv give camera|monitor [player]
+      /cctv list
+      /cctv remove <name>
+      /cctv watch <name>
+      /cctv stopwatch
+      /cctv record start|stop <name>
+      /cctv footage <name>
+      /cctv playback <name> <file>
+
+permissions:
+  cctv.admin:
+    description: Give/remove cameras, manage recordings
+    default: op
+  cctv.use:
+    description: Watch cameras and use the monitor
+    default: true
